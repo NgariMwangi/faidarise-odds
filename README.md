@@ -2,117 +2,99 @@ FaidaRise Sports Odds Dashboard - Submission Documentation
 📌 Table of Contents
 🚀 Setup Instructions
 
-🛠 Technology Choices & Rationale
+🛠 Technology Stack
 
-⚠️ Challenges Faced & Solutions
+⚠️ Challenges & Solutions
 
-🔮 Future Improvements
+🔮 Roadmap
 
 🚀 Setup Instructions
 Prerequisites
-✅ Node.js v18+ (for frontend & backend)
-✅ Python 3.10+ (for the scraper)
-✅ Yarn (recommended) or npm
-✅ Cloudflare Tunnel (for public sharing)
+Node.js v18+
 
-1️⃣ Backend (odds_Api) Setup
+Python 3.10+
+
+npm (included with Node.js)
+
+Cloudflare Tunnel (for demo sharing)
+
+Installation
+1. Backend Setup
 bash
 cd odds_Api
-yarn install
-cp .env.example .env  # Configure your environment variables
-yarn dev  # Starts the Express server at http://localhost:3000
-2️⃣ Frontend Setup
+npm install
+cp .env.example .env
+npm run dev
+2. Frontend Setup
 bash
 cd ../frontend
-yarn install
-yarn dev  # Starts Astro frontend at http://localhost:4321
-3️⃣ Scraper Execution
+npm install
+npm run dev
+3. Scraper Execution
 bash
 cd ../scrapper
 pip install -r requirements.txt
-python sportybet_scraper.py  # Outputs JSON to `scrapper/data/odds.json`
-4️⃣ Running with Cloudflare Tunnel (Public Sharing)
+python sportybet_scraper.py
+4. Cloudflare Tunnel
 bash
-# Terminal 1: Backend
+# Backend
 cd odds_Api
 cloudflared tunnel --url http://localhost:3000
 
-# Terminal 2: Frontend
+# Frontend (new terminal)
 cd ../frontend
 cloudflared tunnel --url http://localhost:4321
-📌 Note: Cloudflare will generate temporary URLs (e.g., https://your-subdomain.trycloudflare.com).
+🛠 Technology Stack
+Component	Technology	Rationale
+Scraper	Python + Playwright	Reliable JS rendering
+Backend	Express + TypeScript	Type-safe API development
+Frontend	Astro + React	Optimal performance
+Styling	TailwindCSS	Rapid UI development
+Deployment	Cloudflare	Secure public sharing
+⚠️ Challenges & Solutions
+Anti-Scraping Measures
 
-🛠 Technology Choices & Rationale
-🔹 Scraper (Python + BeautifulSoup)
-Choice	Why?
-Python	Best ecosystem for web scraping
-BeautifulSoup	Lightweight, fast HTML parsing
-Playwright	Handles JavaScript-rendered content
-Retry Logic	Prevents rate-limiting & bans
-🔹 Backend (Express + TypeScript)
-Choice	Why?
-Express	Minimalist, fast API server
-TypeScript	Type safety reduces runtime errors
-JWT Auth	Simple yet secure API access
-CORS	Safe frontend-backend communication
-🔹 Frontend (Astro + React + TailwindCSS)
-Choice	Why?
-Astro	Blazing-fast static + dynamic rendering
-React	Reusable components for odds display
-TailwindCSS	Rapid UI development
-Material-UI	Professional, responsive tables
-⚠️ Challenges Faced & Solutions
-1️⃣ Scraper Blocked by Bookmaker
-❌ Problem: SportyBet detected and blocked automated requests.
-✅ Solution:
+Implemented request throttling (1-3s delays)
 
-Randomized request delays (time.sleep(random.uniform(1, 3)))
+Used rotating user agents
 
-Rotating User-Agent headers
+Added Playwright for full page rendering
 
-Playwright for JS-rendered content
+Data Freshness
 
-2️⃣ API Authentication
-❌ Problem: Needed secure but simple API access.
-✅ Solution:
+Created caching layer in Express
 
-JWT tokens with 30-minute expiry
+Implemented 60s polling in frontend
 
-Protected routes with authMiddleware
+Mobile Experience
 
-3️⃣ Real-Time Data Sync
-❌ Problem: Frontend needed fresh odds without manual refresh.
-✅ Solution:
+Used Material-UI responsive tables
 
-Frontend polling (every 60s)
+Implemented column hiding on small screens
 
-Cached responses to reduce API calls
+🔮 Roadmap
+Near-Term
+Add Betika & MozzartBet scrapers
 
-4️⃣ Mobile Responsiveness
-❌ Problem: Odds tables looked bad on small screens.
-✅ Solution:
+Implement WebSocket updates
 
-Material-UI DataGrid with column hiding
+Enhance error tracking
 
-TailwindCSS breakpoints for adaptive UI
+Long-Term
+Docker containerization
 
-🔮 Future Improvements
-📌 Short-Term (Post-Interview)
-✔ Multi-Bookmaker Support (Betika, MozzartBet)
-✔ WebSockets for live odds updates
-✔ Better Error Logging (Sentry/LogRocket)
+Automated cron jobs
 
-📌 Long-Term (Production-Ready)
-✔ Dockerize (Easy deployment)
-✔ Automated Scraping (Cron jobs)
-✔ Odds Comparison (Compare across bookmakers)
-✔ User Accounts (Save favorite matches)
+Multi-bookmaker odds comparison
 
-🎯 Final Notes
-This project demonstrates:
-✅ Full-stack development (Python + Node + React)
-✅ Problem-solving (rate-limiting, UI challenges)
-✅ Best practices (TypeScript, JWT, responsive design)
+🎯 Key Features
+Real-time odds display
 
-Ready for review! 🚀
+Responsive mobile interface
+
+Secure JWT authentication
+
+Automated scraping pipeline
+
+
 
