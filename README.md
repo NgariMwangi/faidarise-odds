@@ -30,7 +30,6 @@ A real-time sports odds dashboard that scrapes betting data, serves it via an AP
 ```bash
 cd odds_Api
 npm install
-cp .env.example .env
 npm run dev
 ```
 2. Frontend Setup
@@ -44,7 +43,7 @@ npm run dev
 
 cd ../scrapper
 pip install -r requirements.txt
-python sportybet_scraper.py
+python main.py
 ```
 4. Cloudflare Tunnel (for demo sharing)
 ```bash
