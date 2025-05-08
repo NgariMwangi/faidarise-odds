@@ -1,0 +1,242 @@
+[
+  {
+    "sport_type": "soccer",
+    "home_team": "City Stars",
+    "away_team": "Mara Sugar Fc",
+    "odds": [
+      "2.48",
+      "3.00",
+      "2.90"
+    ]
+  },
+  {
+    "sport_type": "soccer",
+    "home_team": "Las Palmas",
+    "away_team": "Rayo Vallecano",
+    "odds": [
+      "2.55",
+      "3.30",
+      "3.00"
+    ]
+  },
+  {
+    "sport_type": "soccer",
+    "home_team": "Ac Milan",
+    "away_team": "Bologna Fc",
+    "odds": [
+      "2.65",
+      "3.35",
+      "2.75"
+    ]
+  },
+  {
+    "sport_type": "soccer",
+    "home_team": "Wolfsburg",
+    "away_team": "Hoffenheim",
+    "odds": [
+      "2.40",
+      "3.70",
+      "2.85"
+    ]
+  },
+  {
+    "sport_type": "soccer",
+    "home_team": "Coventry",
+    "away_team": "Sunderland",
+    "odds": [
+      "2.29",
+      "3.05",
+      "3.50"
+    ]
+  },
+  {
+    "sport_type": "table-tennis",
+    "home_team": "Wisniewski, Bartl...",
+    "away_team": "Rolak, Jaroslaw",
+    "odds": [
+      "1.66",
+      "2.09"
+    ]
+  },
+  {
+    "sport_type": "table-tennis",
+    "home_team": "Misiak, Mateusz",
+    "away_team": "Eliasz, Adrian",
+    "odds": [
+      "2.00",
+      "1.72"
+    ]
+  },
+  {
+    "sport_type": "table-tennis",
+    "home_team": "Latala, Lukasz",
+    "away_team": "Guzy, Karol",
+    "odds": [
+      "2.13",
+      "1.64"
+    ]
+  },
+  {
+    "sport_type": "table-tennis",
+    "home_team": "Nowalinski, Macie...",
+    "away_team": "Wisniewski, Karol...",
+    "odds": [
+      "1.40",
+      "2.75"
+    ]
+  },
+  {
+    "sport_type": "table-tennis",
+    "home_team": "Vavrecka, Michal",
+    "away_team": "Svacha, Ondrej",
+    "odds": [
+      "2.95",
+      "1.35"
+    ]
+  },
+  {
+    "sport_type": "cricket",
+    "home_team": "Afghanistan Srl",
+    "away_team": "West Indies Srl",
+    "odds": [
+      "2.25",
+      "1.65"
+    ]
+  },
+  {
+    "sport_type": "cricket",
+    "home_team": "Nepal",
+    "away_team": "Hong Kong, China",
+    "odds": [
+      "1.80",
+      "2.00"
+    ]
+  },
+  {
+    "sport_type": "cricket",
+    "home_team": "Thailand",
+    "away_team": "Kuwait",
+    "odds": [
+      "1.09",
+      "7.00"
+    ]
+  },
+  {
+    "sport_type": "cricket",
+    "home_team": "Northern District...",
+    "away_team": "Central Districts...",
+    "odds": [
+      "1.75",
+      "2.05"
+    ]
+  },
+  {
+    "sport_type": "cricket",
+    "home_team": "Adelaide Strikers...",
+    "away_team": "Brisbane Heat Srl...",
+    "odds": [
+      "1.85",
+      "1.90"
+    ]
+  },
+  {
+    "sport_type": "baseball",
+    "home_team": "Tampa Bay",
+    "away_team": "Philadelphia",
+    "odds": [
+      "2.60",
+      "10.00",
+      "1.73"
+    ]
+  },
+  {
+    "sport_type": "baseball",
+    "home_team": "Atlanta",
+    "away_team": "Cincinnati",
+    "odds": [
+      "1.60",
+      "9.80",
+      "3.00"
+    ]
+  },
+  {
+    "sport_type": "baseball",
+    "home_team": "El Aguila De Vera...",
+    "away_team": "Tigres",
+    "odds": [
+      "1.55",
+      "11.00",
+      "2.90"
+    ]
+  },
+  {
+    "sport_type": "baseball",
+    "home_team": "Guerreros",
+    "away_team": "Leones",
+    "odds": [
+      "1.99",
+      "12.00",
+      "2.03"
+    ]
+  },
+  {
+    "sport_type": "baseball",
+    "home_team": "Rojos Del Aguila",
+    "away_team": "Dorados De Chihua...",
+    "odds": [
+      "1.61",
+      "10.00",
+      "2.75"
+    ]
+  },
+  {
+    "sport_type": "ice-hockey",
+    "home_team": "Washington",
+    "away_team": "Carolina",
+    "odds": [
+      "3.10",
+      "4.40",
+      "1.96"
+    ]
+  },
+  {
+    "sport_type": "ice-hockey",
+    "home_team": "Vegas Golden Knig...",
+    "away_team": "Edmonton",
+    "odds": [
+      "2.15",
+      "4.20",
+      "2.80"
+    ]
+  },
+  {
+    "sport_type": "ice-hockey",
+    "home_team": "Florida",
+    "away_team": "Toronto",
+    "odds": [
+      "1.72",
+      "4.50",
+      "3.90"
+    ]
+  },
+  {
+    "sport_type": "ice-hockey",
+    "home_team": "London",
+    "away_team": "Oshawa",
+    "odds": [
+      "1.38",
+      "5.20",
+      "5.80"
+    ]
+  },
+  {
+    "sport_type": "ice-hockey",
+    "home_team": "Norfolk Admirals",
+    "away_team": "Trois-Rivieres Li...",
+    "odds": [
+      "2.25",
+      "4.10",
+      "2.38"
+    ]
+  }
+]
