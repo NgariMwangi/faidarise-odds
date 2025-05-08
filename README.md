@@ -1,4 +1,6 @@
-FaidaRise Sports Odds Dashboard - Submission Documentation
+🏆 FaidaRise Sports Odds Dashboard
+A real-time sports odds dashboard that scrapes data, serves it through an API, and presents it in a responsive frontend.
+
 📌 Table of Contents
 🚀 Setup Instructions
 
@@ -8,40 +10,52 @@ FaidaRise Sports Odds Dashboard - Submission Documentation
 
 🔮 Roadmap
 
+🎯 Key Features
+
 🚀 Setup Instructions
 Prerequisites
 Node.js v18+
 
 Python 3.10+
 
-npm (included with Node.js)
+npm (comes with Node.js)
 
 Cloudflare Tunnel (for demo sharing)
 
 Installation
 1. Backend Setup
 bash
+Copy
+Edit
 cd odds_Api
 npm install
 cp .env.example .env
 npm run dev
 2. Frontend Setup
 bash
+Copy
+Edit
 cd ../frontend
 npm install
 npm run dev
 3. Scraper Execution
 bash
+Copy
+Edit
 cd ../scrapper
 pip install -r requirements.txt
 python sportybet_scraper.py
-4. Cloudflare Tunnel
+4. Cloudflare Tunnel (for demo sharing)
 bash
-# Backend
+Copy
+Edit
+# Backend tunnel
 cd odds_Api
 cloudflared tunnel --url http://localhost:3000
-
-# Frontend (new terminal)
+bash
+Copy
+Edit
+# Frontend tunnel (run in new terminal)
 cd ../frontend
 cloudflared tunnel --url http://localhost:4321
 🛠 Technology Stack
@@ -51,23 +65,21 @@ Backend	Express + TypeScript	Type-safe API development
 Frontend	Astro + React	Optimal performance
 Styling	TailwindCSS	Rapid UI development
 Deployment	Cloudflare	Secure public sharing
-⚠️ Challenges & Solutions
-Anti-Scraping Measures
 
-Implemented request throttling (1-3s delays)
+⚠️ Challenges & Solutions
+🛡️ Anti-Scraping Measures
+Implemented request throttling (1–3s delays)
 
 Used rotating user agents
 
 Added Playwright for full page rendering
 
-Data Freshness
-
+🧠 Data Freshness
 Created caching layer in Express
 
-Implemented 60s polling in frontend
+Implemented 60s polling in the frontend
 
-Mobile Experience
-
+📱 Mobile Experience
 Used Material-UI responsive tables
 
 Implemented column hiding on small screens
@@ -95,6 +107,4 @@ Responsive mobile interface
 Secure JWT authentication
 
 Automated scraping pipeline
-
-
 
