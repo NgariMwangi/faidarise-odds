@@ -59,52 +59,57 @@ cloudflared tunnel --url http://localhost:3000
 cd ../frontend
 cloudflared tunnel --url http://localhost:4321
 ```
-🛠 Technology Stack
-Component	Technology	Rationale
-Scraper	Python + Playwright	Reliable JS rendering
-Backend	Express + TypeScript	Type-safe API development
-Frontend	Astro + React	Optimal performance
-Styling	TailwindCSS	Rapid UI development
-Deployment	Cloudflare	Secure public sharing
+## 🛠 Technology Stack
 
-⚠️ Challenges & Solutions
-🛡️ Anti-Scraping Measures
-Implemented request throttling (1–3s delays)
+| **Component** | **Technology**          | **Rationale**                     |
+|---------------|--------------------------|-----------------------------------|
+| Scraper       | Python + Playwright      | Reliable JS rendering             |
+| Backend       | Express + TypeScript     | Type-safe API development         |
+| Frontend      | Astro + React            | Optimal performance               |
+| Styling       | TailwindCSS              | Rapid UI development              |
+| Deployment    | Cloudflare               | Secure public sharing             |
 
-Used rotating user agents
+---
 
-Added Playwright for full page rendering
+## ⚠️ Challenges & Solutions
 
-🧠 Data Freshness
-Created caching layer in Express
+### 🛡️ Anti-Scraping Measures
 
-Implemented 60s polling in the frontend
+- Implemented request throttling (1–3s delays)  
+- Used rotating user agents  
+- Added Playwright for full page rendering  
 
-📱 Mobile Experience
-Used Material-UI responsive tables
+### 🧠 Data Freshness
 
-Implemented column hiding on small screens
+- Created caching layer in Express  
+- Implemented 60s polling in the frontend  
 
-🔮 Roadmap
-Near-Term
-Add Betika & MozzartBet scrapers
+### 📱 Mobile Experience
 
-Implement WebSocket updates
+- Used Material-UI responsive tables  
+- Implemented column hiding on small screens  
 
-Enhance error tracking
+---
 
-Long-Term
-Docker containerization
+## 🔮 Roadmap
 
-Automated cron jobs
+### Near-Term Goals
 
-Multi-bookmaker odds comparison
+- Add Betika & MozzartBet scrapers  
+- Implement WebSocket updates  
+- Enhance error tracking  
 
-🎯 Key Features
-Real-time odds display
+### Long-Term Goals
 
-Responsive mobile interface
+- Docker containerization  
+- Automated cron jobs  
+- Multi-bookmaker odds comparison  
 
-Secure JWT authentication
+---
 
-Automated scraping pipeline
+## 🎯 Key Features
+
+- Real-time odds display  
+- Responsive mobile interface  
+- Secure JWT authentication  
+- Automated scraping pipeline  
