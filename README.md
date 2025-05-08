@@ -37,6 +37,11 @@ npm run dev
 cd ../frontend
 npm install
 npm run dev
+
+## 🔐 Login Credentials
+
+- **Email:** `admin@example.com`  
+- **Password:** `pass1234` 
 ```
 3. Scraper Execution
 ```bash
